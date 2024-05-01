@@ -15,6 +15,6 @@ Route::middleware(['auth:sanctum', config('jetstream.auth_session'), 'verified']
     Route::get('/users')->name('users');
     Route::get('/users/{user}')->name('users.show');
     Route::post('/users')->name('users.store');
-    Route::update('/users/{user}')->name('users.update');
+    Route::put('/users/{user}')->name('users.update');
     Route::delete('/users/{user}')->name('users.delete');
 });
