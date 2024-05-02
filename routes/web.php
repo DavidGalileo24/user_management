@@ -13,5 +13,5 @@ Route::middleware(['auth:sanctum', config('jetstream.auth_session'), 'verified']
     })->name('dashboard');
 
     //Users routes
-    Route::resource('users', UserController::class);
+    Route::resource('/users', UserController::class);
 });
